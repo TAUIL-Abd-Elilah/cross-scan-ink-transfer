@@ -9,6 +9,16 @@ on. The ink sits up to 100 µm off those meshes. A **label-free depth pick** (de
 confident of 5 depth windows) raises it to **0.803**, within 0.007 of choosing the depth with the labels. On
 w044 it goes from 0.70 to 0.90.
 
+**Use it on your own segment** (one command; needs `CANON_CKPT` and `VILLA_INFERENCE_DIR`, see `runs/env.sh`):
+
+```bash
+python src/predict_offmesh.py <segment.tifxyz> <2.4 um volume zarr URL> out/myseg [--rows r0 r1 --cols c0 c1]
+# -> out/myseg_ink.tif (depth-corrected ink), out/myseg_ink_mesh_as_is.tif, out/myseg_depth.json (chosen depth)
+```
+
+Tested end to end on w044: it picks -96 µm on its own and scores AUC 0.902 against the human labels, versus 0.692
+for the mesh as published. Cost: about 1.2 GB of CT per cm² (4.8 µm reads) and a few GPU minutes.
+
 Also: 4.8 µm reads cost a fifth of the download for most of the signal (B); the canonical model does not read the
 real 9.362 µm scan (D); a 5.8 cm² screen of PHerc1203 at 2.4 µm and a ~30 cm² screen at 9.36 µm are negative (E);
 and `ink_9um` fine-tuned on native 9.362 µm data reads an unseen scroll better, on AUC and on Scheirer's

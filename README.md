@@ -136,6 +136,22 @@ a person made out four letters 0.076, and run-to-run noise is 0.005. We ran his 
 | PHerc0139 w030 + w045 | 0.044 / 0.048 | 0.061 / **0.070** / 0.060 | <= 0.002 |
 | **PHerc0841, unseen scroll** | 0.028 / 0.028 | 0.053 / **0.053** / 0.049 | <= 0.005 |
 
+**Head-to-head on the unseen scroll.** Scheirer's released fine-tune (`ink9um_ft_s42_step12000.pth`, release
+`reader-ft-s42`, trained on pseudo-labels from PHerc0139 w025-w059) never saw PHerc0841 either, and neither did
+their common parent `ink_9um`. That makes PHerc0841 a fair test for both. His exam PHerc0814 turned out to be in
+the base model's training, as he notes. On PHerc0841, mean over its 3 segments
+(`results/F_head_to_head_pherc0841.json`):
+
+| reader | human-label AUC | hp r (letter scale) |
+|---|---|---|
+| released `ink_9um` s42 75k | 0.734 | 0.028 |
+| this repo, run b | 0.804 | 0.053 |
+| **Scheirer ft_s42** | **0.812** | **0.068** |
+
+His reader is the stronger of the two on this unseen scroll. The two recipes are close (fine-tuning on native
+9.362 µm PHerc0139 with the 2.4 µm prediction as the label), and both confirm on a scroll neither base nor
+fine-tune saw that native-9 µm training transfers.
+
 His caveat is that blurring a read raises hp r, so reads only compare at equal blur. We blurred every model's
 output by 0, 2 and 4 px and scored all of them on identical pixels (`src/dist9/hp_blur.py`). On PHerc0841, run b
 scores 0.059 / 0.094 / 0.125 and the released model 0.030 / 0.042 / 0.054. The released model blurred by 4 px

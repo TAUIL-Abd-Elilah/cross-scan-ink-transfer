@@ -1,0 +1,8 @@
+{
+ "what": "canonical 2um model on the published 9.362 um surface volume of w043 (20250728140407), crop px rows 3700:4180 cols 2850:4420, trilinear x3.9025 to the 2.4 um grid; NCC template search over the whole published ds8 prediction (compare_wide.py)",
+ "reference_2p4um_published_sv": {"best_r": 0.935, "at_expected_location": true, "r_p99.9_all_positions": 0.295},
+ "raw_upsampled": {"o-12": {"near_expected_r": 0.321, "r_p99.9": 0.265}, "o+0": {"near_expected_r": 0.240, "r_p99.9": 0.295}, "o+12": {"near_expected_r": 0.281, "r_p99.9": 0.268}},
+ "histogram_matched_to_2p4": {"o-12": {"near_expected_r": 0.233, "r_p99.9": 0.300}, "o+0": {"near_expected_r": 0.200, "r_p99.9": 0.296}, "o+12": {"near_expected_r": 0.269, "r_p99.9": 0.232}},
+ "flattened": {"o+0": {"near_expected_r": 0.183, "r_p99.9": 0.245}},
+ "note": "global best positions (0.35-0.41) are elsewhere on the segment and not consistent across depth windows; visually not legible (figures/D_real_9.362um_upsampled_r0.32.png)"
+}

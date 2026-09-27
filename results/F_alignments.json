@@ -1,0 +1,632 @@
+[
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.129,
+    "offset_yx": [
+     -6,
+     -7
+    ]
+   },
+   "tr": {
+    "r": 0.157,
+    "offset_yx": [
+     -8,
+     -7
+    ]
+   },
+   "bl": {
+    "r": 0.102,
+    "offset_yx": [
+     -8,
+     -7
+    ]
+   },
+   "br": {
+    "r": 0.11,
+    "offset_yx": [
+     -10,
+     -11
+    ]
+   }
+  },
+  "segment": "20250108000005-w030_2025010818",
+  "offset_yx": [
+   -8,
+   -7
+  ],
+  "r_best": 0.12732023000717163,
+  "r_zero_offset": 0.11071833968162537,
+  "r_search_p50": 0.07463686913251877,
+  "r_search_p99": 0.12593019962310792,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.189,
+    "offset_yx": [
+     -7,
+     -7
+    ]
+   },
+   "tr": {
+    "r": 0.091,
+    "offset_yx": [
+     -5,
+     -9
+    ]
+   },
+   "bl": {
+    "r": 0.178,
+    "offset_yx": [
+     -7,
+     -7
+    ]
+   },
+   "br": {
+    "r": 0.101,
+    "offset_yx": [
+     -9,
+     -11
+    ]
+   }
+  },
+  "segment": "20260126000000-w045_2026012619",
+  "offset_yx": [
+   -7,
+   -7
+  ],
+  "r_best": 0.14303173124790192,
+  "r_zero_offset": 0.12166593223810196,
+  "r_search_p50": 0.07962564378976822,
+  "r_search_p99": 0.1413445281982422,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.166,
+    "offset_yx": [
+     -6,
+     -6
+    ]
+   },
+   "tr": {
+    "r": 0.085,
+    "offset_yx": [
+     -8,
+     -10
+    ]
+   },
+   "bl": {
+    "r": 0.17,
+    "offset_yx": [
+     -8,
+     -8
+    ]
+   },
+   "br": {
+    "r": 0.143,
+    "offset_yx": [
+     -12,
+     -8
+    ]
+   }
+  },
+  "segment": "20260112000000-w043_2026011217",
+  "offset_yx": [
+   -8,
+   -8
+  ],
+  "r_best": 0.14658799767494202,
+  "r_zero_offset": 0.11695503443479538,
+  "r_search_p50": 0.07875242084264755,
+  "r_search_p99": 0.14494026005268096,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.148,
+    "offset_yx": [
+     -6,
+     -8
+    ]
+   },
+   "tr": {
+    "r": 0.179,
+    "offset_yx": [
+     -8,
+     -8
+    ]
+   },
+   "bl": {
+    "r": 0.112,
+    "offset_yx": [
+     -10,
+     -8
+    ]
+   },
+   "br": {
+    "r": 0.187,
+    "offset_yx": [
+     -8,
+     -10
+    ]
+   }
+  },
+  "segment": "20250108000000-w025_2025010863",
+  "offset_yx": [
+   -8,
+   -8
+  ],
+  "r_best": 0.16468466818332672,
+  "r_zero_offset": 0.13175469636917114,
+  "r_search_p50": 0.08463091403245926,
+  "r_search_p99": 0.16280130982398985,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.07,
+    "offset_yx": [
+     -4,
+     -7
+    ]
+   },
+   "tr": {
+    "r": 0.072,
+    "offset_yx": [
+     -6,
+     -9
+    ]
+   },
+   "bl": {
+    "r": 0.067,
+    "offset_yx": [
+     -6,
+     3
+    ]
+   },
+   "br": {
+    "r": 0.08,
+    "offset_yx": [
+     -16,
+     -7
+    ]
+   }
+  },
+  "segment": "20250108000001-w026_2025010854",
+  "offset_yx": [
+   -8,
+   -7
+  ],
+  "r_best": 0.0684562474489212,
+  "r_zero_offset": 0.061401695013046265,
+  "r_search_p50": 0.045151568949222565,
+  "r_search_p99": 0.0678605541586876,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.092,
+    "offset_yx": [
+     1,
+     -6
+    ]
+   },
+   "tr": {
+    "r": 0.102,
+    "offset_yx": [
+     -3,
+     -10
+    ]
+   },
+   "bl": {
+    "r": 0.065,
+    "offset_yx": [
+     -9,
+     0
+    ]
+   },
+   "br": {
+    "r": 0.051,
+    "offset_yx": [
+     -15,
+     -2
+    ]
+   }
+  },
+  "segment": "20250108000002-w027_2025010845",
+  "offset_yx": [
+   -3,
+   -6
+  ],
+  "r_best": 0.08004012703895569,
+  "r_zero_offset": 0.07611546665430069,
+  "r_search_p50": 0.052226126194000244,
+  "r_search_p99": 0.0793694806098938,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.102,
+    "offset_yx": [
+     -4,
+     -8
+    ]
+   },
+   "tr": {
+    "r": 0.093,
+    "offset_yx": [
+     -4,
+     -8
+    ]
+   },
+   "bl": {
+    "r": 0.138,
+    "offset_yx": [
+     -10,
+     -6
+    ]
+   },
+   "br": {
+    "r": 0.099,
+    "offset_yx": [
+     -10,
+     -10
+    ]
+   }
+  },
+  "segment": "20250223000000-w059_2025022312",
+  "offset_yx": [
+   -8,
+   -8
+  ],
+  "r_best": 0.10880400240421295,
+  "r_zero_offset": 0.08984990417957306,
+  "r_search_p50": 0.062107983976602554,
+  "r_search_p99": 0.10777651876211167,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.047,
+    "offset_yx": [
+     -2,
+     -10
+    ]
+   },
+   "tr": {
+    "r": 0.069,
+    "offset_yx": [
+     -2,
+     -10
+    ]
+   },
+   "bl": {
+    "r": 0.083,
+    "offset_yx": [
+     -12,
+     -10
+    ]
+   },
+   "br": {
+    "r": 0.091,
+    "offset_yx": [
+     -8,
+     -8
+    ]
+   }
+  },
+  "segment": "20251226000000-w055_2025122611",
+  "offset_yx": [
+   -8,
+   -8
+  ],
+  "r_best": 0.07494500279426575,
+  "r_zero_offset": 0.06549271196126938,
+  "r_search_p50": 0.04810422286391258,
+  "r_search_p99": 0.07449070036411286,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.075,
+    "offset_yx": [
+     -12,
+     -7
+    ]
+   },
+   "tr": {
+    "r": 0.081,
+    "offset_yx": [
+     -2,
+     -9
+    ]
+   },
+   "bl": {
+    "r": 0.078,
+    "offset_yx": [
+     -12,
+     -9
+    ]
+   },
+   "br": {
+    "r": 0.104,
+    "offset_yx": [
+     -12,
+     -5
+    ]
+   }
+  },
+  "segment": "20260115000001-w056_2026011514",
+  "offset_yx": [
+   -10,
+   -7
+  ],
+  "r_best": 0.0840463861823082,
+  "r_zero_offset": 0.07007260620594025,
+  "r_search_p50": 0.052277110517024994,
+  "r_search_p99": 0.08323206603527068,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.036,
+    "offset_yx": [
+     -5,
+     -2
+    ]
+   },
+   "tr": {
+    "r": 0.048,
+    "offset_yx": [
+     -5,
+     -14
+    ]
+   },
+   "bl": {
+    "r": 0.05,
+    "offset_yx": [
+     -15,
+     -2
+    ]
+   },
+   "br": {
+    "r": 0.067,
+    "offset_yx": [
+     -9,
+     -8
+    ]
+   }
+  },
+  "segment": "20260127000000-w057_2026012713",
+  "offset_yx": [
+   -9,
+   -8
+  ],
+  "r_best": 0.04995529353618622,
+  "r_zero_offset": 0.04237637668848038,
+  "r_search_p50": 0.0315481573343277,
+  "r_search_p99": 0.049505512565374374,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.107,
+    "offset_yx": [
+     -1,
+     -5
+    ]
+   },
+   "tr": {
+    "r": 0.084,
+    "offset_yx": [
+     -11,
+     -13
+    ]
+   },
+   "bl": {
+    "r": 0.091,
+    "offset_yx": [
+     -13,
+     -5
+    ]
+   },
+   "br": {
+    "r": 0.061,
+    "offset_yx": [
+     -17,
+     -15
+    ]
+   }
+  },
+  "segment": "20260130000000-w031_2026013019",
+  "offset_yx": [
+   -5,
+   -7
+  ],
+  "r_best": 0.08729202300310135,
+  "r_zero_offset": 0.08145012706518173,
+  "r_search_p50": 0.05763022229075432,
+  "r_search_p99": 0.08657491058111191,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.127,
+    "offset_yx": [
+     -6,
+     -6
+    ]
+   },
+   "tr": {
+    "r": 0.146,
+    "offset_yx": [
+     -6,
+     -12
+    ]
+   },
+   "bl": {
+    "r": 0.129,
+    "offset_yx": [
+     -12,
+     -6
+    ]
+   },
+   "br": {
+    "r": 0.041,
+    "offset_yx": [
+     -16,
+     -6
+    ]
+   }
+  },
+  "segment": "20260203000000-w032_2026020303",
+  "offset_yx": [
+   -8,
+   -8
+  ],
+  "r_best": 0.12257324159145355,
+  "r_zero_offset": 0.10585562884807587,
+  "r_search_p50": 0.07275880873203278,
+  "r_search_p99": 0.12150569975376128,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.151,
+    "offset_yx": [
+     -6,
+     -5
+    ]
+   },
+   "tr": {
+    "r": 0.129,
+    "offset_yx": [
+     -10,
+     -9
+    ]
+   },
+   "bl": {
+    "r": 0.15,
+    "offset_yx": [
+     -8,
+     -7
+    ]
+   },
+   "br": {
+    "r": 0.126,
+    "offset_yx": [
+     -8,
+     -11
+    ]
+   }
+  },
+  "segment": "20260206000000-w042_2026020613",
+  "offset_yx": [
+   -8,
+   -7
+  ],
+  "r_best": 0.13974054157733917,
+  "r_zero_offset": 0.12180110067129135,
+  "r_search_p50": 0.08472318202257156,
+  "r_search_p99": 0.1385974758863449,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.18,
+    "offset_yx": [
+     -3,
+     -9
+    ]
+   },
+   "tr": {
+    "r": 0.094,
+    "offset_yx": [
+     5,
+     -11
+    ]
+   },
+   "bl": {
+    "r": 0.122,
+    "offset_yx": [
+     -9,
+     -7
+    ]
+   },
+   "br": {
+    "r": 0.164,
+    "offset_yx": [
+     -11,
+     -11
+    ]
+   }
+  },
+  "segment": "20260206000001-w047_2026020613",
+  "offset_yx": [
+   -7,
+   -9
+  ],
+  "r_best": 0.14103977382183075,
+  "r_zero_offset": 0.1156342476606369,
+  "r_search_p50": 0.0783216580748558,
+  "r_search_p99": 0.13934983909130097,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ },
+ {
+  "quadrants": {
+   "tl": {
+    "r": 0.069,
+    "offset_yx": [
+     0,
+     -5
+    ]
+   },
+   "tr": {
+    "r": 0.074,
+    "offset_yx": [
+     -4,
+     -9
+    ]
+   },
+   "bl": {
+    "r": 0.07,
+    "offset_yx": [
+     -16,
+     -7
+    ]
+   },
+   "br": {
+    "r": 0.078,
+    "offset_yx": [
+     -12,
+     -7
+    ]
+   }
+  },
+  "segment": "20260206000002-w054_2026020617",
+  "offset_yx": [
+   -8,
+   -7
+  ],
+  "r_best": 0.07047312706708908,
+  "r_zero_offset": 0.06259948760271072,
+  "r_search_p50": 0.04389699175953865,
+  "r_search_p99": 0.06990873962640762,
+  "aligner": "ink_9um hybrid_3d2d-seed42 step-075000 forward, high-passed (sigma 16), canon stretched to the native canvas"
+ }
+]

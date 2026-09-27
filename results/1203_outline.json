@@ -1,0 +1,23 @@
+{
+ "name": "1203",
+ "step_mm": 0.3,
+ "z_offset_mm": 74.39999999999999,
+ "offset_cost": 0.013329367835124216,
+ "offset_cost_2nd_best_sep": 0.0006494464690339277,
+ "offset_cost_median": 0.1688825209235621,
+ "a_height_mm": 36.3,
+ "b_height_mm": 170.4,
+ "mean_radius_mm_a": 17.479407993442624,
+ "mean_radius_mm_b_matched": 18.033619858652095,
+ "mirror": false,
+ "rotation": {
+  "mean_ncc": 0.9900683443888266,
+  "angle_deg": 0.11475012456906608,
+  "angle_spread_deg": 0.20316812876632961
+ },
+ "other_mirror": {
+  "mean_ncc": 0.8836360689458868,
+  "angle_deg": 155.27439614285683,
+  "angle_spread_deg": 49.558477866510486
+ }
+}

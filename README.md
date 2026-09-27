@@ -157,7 +157,7 @@ so it does not separate them; the human labels are used for AUC above.
   - PHerc0841's three segments cover the same patch, so this is one labelled region.
   - **Neither model makes those letters legible at 9 µm** (`figures/F_pherc0841_released_vs_finetuned.png`).
   - This is a measured step, not a reading.
-- The fine-tuned checkpoint is attached to the release; the code is in `src/dist9/`.
+- The fine-tuned checkpoint is the [v1.0 release asset](https://github.com/TAUIL-Abd-Elilah/cross-scan-ink-transfer/releases/tag/v1.0) `ink9um_native0139_ft6k.pth` (SHA-256 4a525808...21ee71); the code is in `src/dist9/`.
 
 ## What it means in practice
 

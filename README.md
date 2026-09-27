@@ -77,9 +77,16 @@ model against the human labels (AUC, labelled ink vs unlabelled papyrus within 2
   the mesh was already right it costs at most 0.036 (w041).
 - A pixel-wise maximum over the depth windows does not help (mean 0.753): taking one depth is better than
   merging several.
+- The offset is not always constant along a segment. Cut into four ~2 mm sub-windows and scored with the labels,
+  w044 prefers -96 µm in all four (a shift), while on w045 the best depth runs from +48 µm at one end (AUC 0.90,
+  against 0.39 on the mesh) to -96 µm at the other (0.96 against 0.68): there the mesh is tilted against the
+  sheet. Picking the depth locally without labels does not recover this reliably (mean 0.791 with 4 mm boxes,
+  0.763 with 2 mm, against 0.803 for one pick per window; w045 0.70 -> 0.77 but w044 0.90 -> 0.74), so the tool
+  keeps one depth per window (`src/march_bench_local.py`, `results/C2_march_scan_local_depth.json`).
 - Reading the March scan with 4.8 µm data on the 2.4 µm grid costs about 1.2 GB of CT per cm².
-- Code: `src/march_bench.py`, `src/march_bench_labelfree.py`, `runs/C2_march_scan_benchmark.sh`. All numbers:
-  `results/C2_march_scan_8_segments.json`.
+- Code: `src/march_bench.py`, `src/march_bench_labelfree.py`, `src/march_bench_local.py`,
+  `runs/C2_march_scan_benchmark.sh`. All numbers: `results/C2_march_scan_8_segments.json`,
+  `results/C2_march_scan_local_depth.json`.
 - `w043` may be in the canonical model's training data and the labels were drawn on the 2.399 µm scan, so the
   reference column is an upper bound. The comparison between the three March columns is the point.
 

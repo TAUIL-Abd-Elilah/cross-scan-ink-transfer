@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# C2. Human-label benchmark of the March-2026 2.4 um scan (PHerc0139 20260319133554) on all 8 PHerc0139 segments
+# C2. Human-label benchmark of the July 2025 2.4 um ROI scan (PHerc0139 volume 20260319133554) on all 8 PHerc0139 segments
 #     that have human ink labels. Per segment: densest labelled 2.9 x 8.2 mm window; reference = published 2.399 um
 #     surface volume; March scan = mesh as published, then flattened + 5 depth windows (-96..+96 um); AUC vs labels.
 #     ~1.2 GB of CT per segment. Results: results/C2_march_scan_8_segments.json.

@@ -1,10 +1,22 @@
 # cross-scan-ink-transfer
 
-Several scrolls, including the prize-eligible PHerc1203 and PHerc0846A, now have **March-2026 2.4 µm scans**.
-Can the canonical 2 µm ink model (`scrollprize/ink_canonical_2um`) read them, and what does it take?
+Several scrolls, including the prize-eligible PHerc1203 and PHerc0846A, have **2.4 µm scans from July 2025**
+(published in March 2026). Can the canonical 2 µm ink model (`scrollprize/ink_canonical_2um`) read them, and what
+does it take?
+
+> **Correction, 28 Sep 2026** (from the organisers,
+> [villa#1912](https://github.com/ScrollPrize/villa/issues/1912)): the 2.403 µm volumes with ids `20260319…` are
+> **not March-2026 scans**. They are July 2025 scans exported in March 2026.
+> - For PHerc0139, volume `20260319133554` is a region-of-interest scan (ROI2, 22 Jul 2025). Most PHerc0139
+>   segments are based on the full 2.399 µm scan of Dec 2025. The transforms from that scan to this older ROI
+>   scan had not had much scrutiny, and the offsets measured in C2 are issues of that transform.
+> - PHerc1203's and PHerc0846A's `20260319…` volumes are also July 2025 scans (21 Jul 2025), and they are
+>   those scrolls' only 2.4 µm data.
+>
+> Below, "March scan" and the `march_*` file names refer to these July 2025 volumes.
 
 **Headline (section C2):** on all 8 PHerc0139 segments that have human ink labels, the canonical model reads the
-March-2026 scan at mean AUC **0.756** with the published meshes, against 0.872 on the scan the labels were drawn
+July 2025 2.4 µm ROI scan at mean AUC **0.756** with the published meshes, against 0.872 on the scan the labels were drawn
 on. The ink sits up to 100 µm off those meshes. A **label-free depth pick** (deep render, flatten, keep the most
 confident of 5 depth windows) raises it to **0.803**, within 0.007 of choosing the depth with the labels. On
 w044 it goes from 0.70 to 0.90.
@@ -52,7 +64,7 @@ prediction (model vs model), r at the best alignment within +-24 ds8 px:
 Figures (top = this pipeline, bottom = published prediction): `figures/`.
 
 **C2. The same test on all 8 human-labelled PHerc0139 segments.** Every PHerc0139 segment with published human
-ink labels (w030, w035, w039, w040, w041, w043, w044, w045) also has a mesh on the March-2026 scan. For each, we
+ink labels (w030, w035, w039, w040, w041, w043, w044, w045) also has a mesh on this ROI scan. For each, we
 took the densest labelled 2.9 x 8.2 mm window (about 1.7 cm² of labelled text in total) and scored the canonical
 model against the human labels (AUC, labelled ink vs unlabelled papyrus within 2 mm of it):
 
@@ -90,7 +102,7 @@ model against the human labels (AUC, labelled ink vs unlabelled papyrus within 2
 - `w043` may be in the canonical model's training data and the labels were drawn on the 2.399 µm scan, so the
   reference column is an upper bound. The comparison between the three March columns is the point.
 
-**E. A negative on an eligible scroll: PHerc1203, March-2026 2.4 µm scan.** The same pipeline,
+**E. A negative on an eligible scroll: PHerc1203, July 2025 2.4 µm scan.** The same pipeline,
 screening about **5.8 cm²** of the cleanest sheet surface we could find, found **no text**:
 
 - The 2.4 µm scan was registered to the eligible 9.362 µm scan: outline descriptors, then a similarity
@@ -126,7 +138,8 @@ We fine-tuned `ink_9um` (hybrid_3d2d seed 42, step 75k):
 - **Label transfer:** labels were resized onto the native canvas. The two canvases differ by 0.3-0.4 %
   from a pure 9.362/2.399 scale, so a shift alone leaves a drift across the segment. They were then
   aligned by high-pass cross-correlation; the offset is systematic, about (-8, -7) px, on every held-out
-  segment.
+  segment. The organisers note that the transform between the full 2.4 µm and the 9.4 µm scan could be much
+  improved (villa#1912); the scale difference measured here may be part of that.
 - **Recipe and checkpoints:** the released model and normalization are kept unchanged, and checkpoints
   load in the stock CLI.
 - **Test data:** never trained on. Two held-out PHerc0139 segments with human labels (w030, w045), and
@@ -194,10 +207,11 @@ so it does not separate them; the human labels are used for AUC above.
 
 ## What it means in practice
 
-1. **The March-2026 2.4 µm scans are readable by the canonical model**: mean AUC 0.76 against human
+1. **These July 2025 2.4 µm scans are readable by the canonical model**: mean AUC 0.76 against human
    labels over 8 segments with the published meshes, versus 0.87 on the scan the labels were drawn on.
-2. **The published on-scan meshes can be off the sheet by 50-110 µm** (3 of 8 labelled segments, and line 1,
-   where the mesh as published reads nothing, r 0.11). **Always scan depth before calling a region empty.**
+2. **The meshes transferred to these scans can be off the sheet by 50-110 µm** (3 of 8 labelled segments, and
+   line 1, where the mesh as published reads nothing, r 0.11). The organisers trace this to the transform from the
+   full 2.399 µm scan to the older ROI scan (villa#1912). **Always scan depth before calling a region empty.**
    The label-free depth pick in C2 recovers 40 % of the loss with no labels.
 3. **4.8 µm reads keep most of the signal** (0.73 vs 0.76) for about a fifth of the download.
 4. **The canonical model does not read the real 9.362 µm scan** (0.32, not legible), although the

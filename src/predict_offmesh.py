@@ -2,7 +2,7 @@
 
   python src/predict_offmesh.py <segment.tifxyz dir> <volume zarr URL> <out prefix> [--rows r0 r1 --cols c0 c1]
 
-What it does (validated on 8 human-labelled PHerc0139 segments on the March-2026 scan, README section C2):
+What it does (validated on 8 human-labelled PHerc0139 segments on the July 2025 ROI scan 20260319133554, README section C2):
   1. renders 161 layers (about +-190 um) along the mesh's smoothed normals, reading 4.8 um data onto the 2.4 um
      grid (level 1, oversample 2): about 1.2 GB of CT per cm2;
   2. flattens the render onto the local papyrus layering (cross-correlation dip, refine_surface.py);

@@ -1,4 +1,4 @@
-"""Human-label benchmark for reading the MARCH-2026 2.4 um scan (PHerc0139 20260319133554) with the canonical model.
+"""Human-label benchmark for reading the July 2025 2.4 um ROI scan (PHerc0139 volume 20260319133554, exported March 2026) with the canonical model.
 
 For each PHerc0139 segment that has human ink labels (drawn on the 2.399 um scan 20260102150214) and a mesh on
 the March scan:

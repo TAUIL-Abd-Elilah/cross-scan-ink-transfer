@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# B. Same line on the MARCH-2026 scan 20260319133554 via the published on-scan mesh.
+# B. Same line on the July 2025 2.4 um ROI scan (volume 20260319133554, exported March 2026) via the published on-scan mesh.
 #    B1 mesh as published, 65 layers: r 0.11 (off-sheet).  B2 deep render + flattening + depth
 #    search: r 0.76 at -46 layers.  B3 the same from 4.8 um data (level 1, oversample 2): r 0.73.
 source runs/env.sh; mkdir -p out; M=$XSCAN_DATA/mesh_20260319133554

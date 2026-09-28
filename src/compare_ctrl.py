@@ -1,4 +1,4 @@
-"""Positive control: our 2.4 um render (March-2026 scan 20260319133554) + canonical 2 um model
+"""Positive control: our 2.4 um render (July 2025 ROI scan, volume 20260319133554) + canonical 2 um model
 vs the published canonical prediction of the same segment (scan 20260102150214).
 
 Grids differ slightly between the two mesh versions; valid-mask matching gave

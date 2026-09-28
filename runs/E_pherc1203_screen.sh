@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# E. PHerc1203 negative screen on the March-2026 2.4 um scan (~5.8 cm2 of clean sheet surface).
+# E. PHerc1203 negative screen on its July 2025 2.4 um scan (volume 20260319130212) (~5.8 cm2 of clean sheet surface).
 # 1) register the 2.4 um scan to the eligible 9.362 um scan (outline descriptor, then Similarity3D
 #    on 38 um blocks at two heights; results/1203_*.json), 2) map four published auto_grown segments
 #    into the 2.4 um frame, 3) survey each whole segment at 19 um (level 3) to find clean sheet
